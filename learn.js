@@ -1,4 +1,4 @@
-/*
+
 let fruits = ['Apple','Banana','Carrot']
 console.log(fruits)
 console.log(fruits[1])
@@ -12,14 +12,14 @@ console.log(fruits)
 fruits.pop()
 console.log(fruits)
 
-fruits.splice(1,1,'Banana') //(ตำแหน่ง,ลบกี่ตัวม,เพิ่มค่าไร)
+fruits.splice(1,1,'Banana') //(ตำแหน่ง,ลบกี่ตัว,เพิ่มค่าไร)
 console.log(fruits)
 
 console.log('มีผลไม้อยู่ '+fruits.length+' ชนิด')
-*/
 
-/*
-let score = [82,75,48,64,36,57]
+console.log("")
+
+let score = [82,75,48,64,36,57,99,13,50,62]
 let passedCount = 0;
 
 // for (let i = 0;score.length;i++){
@@ -33,58 +33,59 @@ score.forEach((score)=>{
         passedCount++
     }
 })
-console.log(passedCount)
-*/
+console.log('สอบผ่านจำนวน : '+passedCount+' จากทั้งหมด : ' +score.length)
 
-/*
-let score = [82,75,48,64,36]
-let passFailScores = score.map((score) => {
-    if (score >= 50){;
+console.log("")
+
+let scores = [82,75,48,64,36]
+let passFailScores = scores.map((scores) => {
+    if (scores >= 50){;
         return 'passed'
     }
     return 'failed'
 })
 
-console.log(score)
+console.log(scores)
 console.log(passFailScores)
 
-let passScores = score.filter((score) => {
-    return score >= 50;
+let passScores = score.filter((scores) => {
+    return scores >= 50;
 })
 
-console.log(score)
+console.log(scores)
 console.log(passScores)
 
-let sumScores = score.reduce((sum,score) => {
-    return sum+score;
+let sumScores = scores.reduce((sum,scores) => {
+    return sum+scores;
 })
 
-console.log(score)
+console.log(scores)
 console.log(sumScores)
-*/
 
-/*
-let scores = [82,75,48,64,36]
-let failedScore = scores.find((scores) => {
-    return scores < 50
-})
-console.log(failedScore)
+console.log("")
 
-let failedScoreI = scores.findIndex((scores) => {
-    return scores < 50
-})
-console.log(failedScoreI)
+// let scores1 = [82,75,48,64,36]
+// let failedScore = scores1.find((scores1) => {
+//     return scores1 < 50
+// })
+// console.log(failedScore)
 
-let everyonePassed = scores.every((scores) => {
-    return scores >= 50
-})
-console.log(everyonePassed)
+// let failedScoreI = scores1.findIndex((scores1) => {
+//     return scores1 < 50
+// })
+// console.log(failedScoreI)
 
-let someonePassed = scores.some((scores) => {
-    return scores >= 50
-})
-console.log(someonePassed)
-*/
+// let everyonePassed = scores1.every((scores1) => {
+//     return scores1 >= 50
+// })
+// console.log(everyonePassed)
+
+// let someonePassed = scores1.some((scores1) => {
+//     return scores1 >= 50
+// })
+// console.log(someonePassed)
+
+// console.log("")
 
 /*
 let rabbits = [
@@ -134,7 +135,7 @@ let rabbit = {
 rabbit.talk()
 console.log(rabbit.weightDetail())
 */
-/*
+// /*
 function Rabbit(name,breed,color,weight) {
     this.name = name
     this.breed = breed
@@ -150,7 +151,7 @@ let rabbit2 = new Rabbit('Momo','Netherland Dwarf','Brown',1.5)
 
 rabbit1.talk()
 rabbit2.talk()
-*/
+// */
 
 // var การสร้างตัวแปรสมัยเก่าที่ไม่สน Global , local
 // const การสร้างตัวแปรแบบค่าคงที่เปลี่ยนค่าไม่ได้
